@@ -1,52 +1,22 @@
-# Kogito-Start
+# Kogito Template for Microservices
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+This template facilitates the construction of a microservice using Kogito and PostgreSQL. It includes a simple process example and provides test cases, which should initially be corrected to practice integration testing.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+# 10 Easy Steps
+1. Start the docker container for the postgres DB
+docker-compose -f docker-compose/docker-compose-postgresql-ONLY.yml up
 
-## Running the application in dev mode
+2. Define an DTO what data does the process need to be started sucessfully.
 
-You can run your application in dev mode that enables live coding using:
-```shell script
-./mvnw compile quarkus:dev
-```
+3. Define an DTO as a process return.
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+4. Define the service with an BPMN process.
 
-## Packaging and running the application
+5. Develop the needed services.
 
-The application can be packaged using:
-```shell script
-./mvnw package
-```
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+6. Develop the needed controllers (optional)
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+7. Develop the needed unit tests
 
-If you want to build an _über-jar_, execute the following command:
-```shell script
-./mvnw package -Dquarkus.package.type=uber-jar
-```
+8. Develop the needed integration tests
 
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using: 
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/Kogito-Start-1.43.0-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
-
-## Related Guides
-
-- Kogito ([guide](https://quarkus.io/version/2.13/guides/kogito)): Add business automation capabilities - processes and rules with Kogito (a toolkit that originates from projects Drools and jBPM)
