@@ -2,7 +2,7 @@
 
 This template facilitates the construction of a microservice using Kogito and PostgreSQL. It includes a simple process example and provides test cases, which should initially be corrected to practice integration testing.
 
-# 10 Easy Steps
+# 8 Easy Steps
 1. Start the docker container for the postgres DB
 docker-compose -f docker-compose/docker-compose-postgresql-ONLY.yml up
 
@@ -20,3 +20,14 @@ docker-compose -f docker-compose/docker-compose-postgresql-ONLY.yml up
 
 8. Develop the needed integration tests
 
+# Build the Process
+mvn clean install
+
+# Develop the Process
+mvn quarkus:dev
+(wait until kogito is started and press d)
+Develop the need functionality with ease!
+
+# Develop the Tests
+mvn quarkus:test
+Develop the needed Tests with ease!

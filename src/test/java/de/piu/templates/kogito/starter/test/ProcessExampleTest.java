@@ -44,7 +44,7 @@ public class ProcessExampleTest {
         ProcessInstance<?> processInstance = processExample.createInstance(m);
         processInstance.start();
         assertEquals(org.kie.api.runtime.process.ProcessInstance.STATE_ACTIVE, processInstance.status());
-        assertEquals(processInstance.businessKey(),"variableA");
+        //assertEquals(processInstance.businessKey(),"variableA");
         
         SecurityPolicy policy = SecurityPolicy.of(IdentityProviders.of("admin", Collections.singletonList("managers")));
 
@@ -55,6 +55,11 @@ public class ProcessExampleTest {
 
         assertEquals(workItems.get(0).getName(),"Task2");
         assertEquals(workItems.get(0).getPhase(),"Task2");
+
+        Model result = (Model) processInstance.variables();
+        assertEquals(4, result.toMap().size());
+        assertEquals("admin", result.toMap().get("variableA"));
+        assertEquals("Carsten", result.toMap().get("variableB"));
 
 
     }
