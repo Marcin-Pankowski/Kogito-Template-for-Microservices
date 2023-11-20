@@ -135,12 +135,9 @@
   <profiles>
     <profile>
       <id>infinispan</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
       <properties>
         <quarkus.profile>infinispan</quarkus.profile>
-        <skipTests>true</skipTests>
+        <skipTests>false</skipTests>
       </properties>
       <dependencies>
         <dependency>
@@ -176,9 +173,12 @@
     </profile>
     <profile>
       <id>postgresql</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
       <properties>
         <quarkus.profile>postgresql</quarkus.profile>
-        <skipTests>true</skipTests>
+        <skipTests>false</skipTests>
       </properties>
       <dependencies>
         <dependency>
