@@ -13,8 +13,8 @@ services:
       interval: 10s
       retries: 50
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=kogito-user
+      - POSTGRES_PASSWORD=kogito-pass
 
   pgadmin-compose:
     image: dpage/pgadmin4:5.0
