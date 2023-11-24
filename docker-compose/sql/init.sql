@@ -1,11 +1,3 @@
-CREATE ROLE "kogito-user" WITH
-    LOGIN
-    SUPERUSER
-    INHERIT
-    CREATEDB
-    CREATEROLE
-    NOREPLICATION
-    PASSWORD 'kogito-pass';
 
 CREATE DATABASE kogito
     WITH
@@ -17,4 +9,3 @@ CREATE DATABASE kogito
     CONNECTION LIMIT = -1;
 
 GRANT ALL PRIVILEGES ON DATABASE kogito TO "kogito-user";
-GRANT ALL PRIVILEGES ON DATABASE kogito TO postgres;

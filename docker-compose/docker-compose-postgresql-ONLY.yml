@@ -16,6 +16,7 @@ services:
       - POSTGRES_USER=kogito-user
       - POSTGRES_PASSWORD=kogito-pass
 
+
   pgadmin-compose:
     image: dpage/pgadmin4:5.0
     environment:
