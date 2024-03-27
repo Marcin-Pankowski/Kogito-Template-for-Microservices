@@ -36,3 +36,5 @@ or
 
 # Test
 A Simple Test Example is provided in the test Folder. 
+
+Copyright 2024 www.piu.de
