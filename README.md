@@ -15,7 +15,9 @@ Developers enjoy the advantage of being able to design every part of the service
 To experiment with the processes, please use Visual Studio Code and load the Kogito Bundle extension.
 
 1. Pull this repository with VSC.
-2. Start the Service : mvn clean install quarkus:dev or mvn clean install quarkus: .
+2. Start the Service : mvn clean install quarkus:dev or mvn clean install quarkus:test.
+3. Modify ComplexServiceExample.bpmn and ServiceExample.java.
+4. Modify Tests. 
 
 
 # Test
