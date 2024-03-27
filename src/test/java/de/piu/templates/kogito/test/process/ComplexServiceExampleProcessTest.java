@@ -60,6 +60,15 @@ public class ComplexServiceExampleProcessTest {
 
         var output = (ComplexServiceExampleOutput) processInstance.variables().toMap().get("output");
         assertThat(output.getBankCustomers().size()).isEqualTo(2);
+        assertThat(output.getBankCustomers().get(0).getName()).isEqualTo("John");
+        assertThat(output.getBankCustomers().get(0).getAge()).isEqualTo(25);
+        assertThat(output.getBankCustomers().get(0).getCounselor()).isEqualTo("Marcin Pankowski");
+        assertThat(output.getBankCustomers().get(0).getCredit()).isBetween(0, 25);
+        assertThat(output.getBankCustomers().get(1).getName()).isEqualTo("Jane");
+        assertThat(output.getBankCustomers().get(1).getAge()).isEqualTo(30);
+        assertThat(output.getBankCustomers().get(1).getCounselor()).isEqualTo("Marcin Pankowski");
+        assertThat(output.getBankCustomers().get(1).getCredit()).isBetween(0, 25);
+    
     }
 
 
