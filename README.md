@@ -1,4 +1,4 @@
-# Kogito Template for Camunda Service Tasks (External Tasks)
+# Kogito Template for Camunda 8 Service Tasks (External Tasks)
 
 This template showcases how Kogito is leveraged as an External Service Task Worker, Handler, and Service. It enables us to apply our BPMN expertise in the context of service tasks. Finally, upon the completion and operational status of the service, the documentation is available because the process itself is the documentation.
 
