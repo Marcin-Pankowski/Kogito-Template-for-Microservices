@@ -1,6 +1,6 @@
-# Kogito Template for Camunda 8 Service Tasks (External Tasks)
+# Kogito Template for Microservices 
 
-This template showcases how Kogito is leveraged as an External Service Task Worker, Handler, and Service. It enables us to apply our BPMN expertise in the context of service tasks. Finally, upon the completion and operational status of the service, the documentation is available because the process itself is the documentation.
+This template showcases how easy it is to develop a cloud-native service with Kogito. It allows us to leverage our BPMN expertise within the context of service tasks. Finally, upon achieving operational status, the service is well-documented because the process itself serves as the documentation.
 
 # Advantages
 
@@ -15,24 +15,8 @@ Developers enjoy the advantage of being able to design every part of the service
 To experiment with the processes, please use Visual Studio Code and load the Kogito Bundle extension.
 
 1. Pull this repository with VSC.
-2. Configure your Zeebe gateway address in the 'application.properties' file.
-3. Start the Service : mvn clean install quarkus:dev.
-4. Start the Camunda Process from the Camunda folder.
+2. Start the Service : mvn clean install quarkus:dev or mvn clean install quarkus: .
 
-or
-
-3. Open ShortPollJobWorkerExample.bpmn.
-    3.1 Click on "Activate Camunda Jobs"-Service Task.
-    ![ServiceTask](images/ServiceTask.png)
-    3.2 Open Properties.
-    ![ServiceTask](images/EditServiceTask.png)
-    ![ServiceTask](images/EditServiceTask2.png)
-    3.3 Open Zeebe Client Properties.
-    ![Zeebe Client Properties](images/EditJobHandlerProperies.png)
-    3.4 Configure your JobType.
-5. Start the Service : mvn clean install quarkus:dev.
-6. Start Camunda 8.
-7. Start your Camunda 8 Process.
 
 # Test
 A Simple Test Example is provided in the test Folder. 
