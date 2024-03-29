@@ -9,6 +9,8 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
 public class BankCustomer extends Person {
     private String counselor;
     private Integer credit;
