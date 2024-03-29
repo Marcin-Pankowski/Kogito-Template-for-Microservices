@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>de.piu.kogito.templates</groupId>
-  <artifactId>piu-kogito-quarkus-Camunda-JobWorkerAndHandler</artifactId>
+  <artifactId>piu-kogito-quarkus-for-microservices</artifactId>
   <version>1.0</version>
   <properties>
     <quarkus-plugin.version>2.16.10.Final</quarkus-plugin.version>
